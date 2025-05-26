@@ -1,0 +1,255 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+scroll-behavior: smooth;
+scroll-padding-top: 2rem;
+font-family: sans-serif;
+}
+*::selection {
+    background: var(--main-color);
+    color: #fff;
+  }
+:root {
+    --main-color: #ffb411;
+    --text-color: #1e1c2a;
+    --bg-color: #fff;
+   
+    --big-font: 4rem;
+    --h2-font: 2.24rem;
+    --p-font: 0.9rem;
+  }
+  section {
+    padding: 50px 10%;
+  }
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+  }
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 18px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    box-shadow: 0 0.5 50rem rgba(0, 0, 0, 0.1);
+}
+ul{
+    display: flex;
+}
+.logo{
+color: var(--main-color);
+font-size: 1.2rem;
+font-weight: 600;
+}
+li a{
+    padding: 10px 20px;
+    transition: 0.2s;
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: 500;
+}
+li a:hover{
+    color: var(--main-color);
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-txt h1{
+    color: var(--main-color);
+    font-size: var(--big-font);
+}
+.home-txt h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0 1rem;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background: #ffa400;
+}
+
+.home-img img{
+    width: 100%;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    max-width: 80%;
+    border-radius: 0.5rem;
+}
+.about-txt span{
+    color: var(--main-color);
+    font-weight: 500;
+}
+.about-txt h2{
+    font-size: var(--h2-font);
+    color: var(--text-color);
+}
+.about-txt p{
+   margin: 0.8rem 0 1.8rem;
+}
+
+.menu-txt{
+    text-align: center;
+}
+.menu-txt span{
+    color: var(--main-color);
+    font-weight: 500;
+}
+.menu-txt h2{
+    font-size: var(--h2-font);
+}
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 1.5rem;
+    align-items: center;
+}
+.box {
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
+    padding: 10px;
+  }
+.box-img{
+    width: 200px;
+    height: 200px;
+}
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  .box h2 {
+    font-size: 1.2rem;
+  }
+  .box h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+  }
+  .box span {
+    font-size: var(--p-font);
+    font-weight: 500;
+  }
+  .services-text{
+    text-align: center;
+  }
+  .services-text span{
+    color: var(--main-color);
+    font-weight: 500;
+  }
+  .services-text h2{
+    font-size: var(--h2-font);
+    color: var(--text-color);
+  }
+  .services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .box-c{
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .box-c h3{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .connect{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .connect span{
+    color: var(--main-color);
+    font-weight: 500;
+  }
+  .connect h2{
+    font-size: var(--h2-font);
+  }
+
+  .contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 1.5rem;
+
+
+  }
+  .contact-box h3{
+     margin-bottom: 1rem;
+  }
+  .social{
+    display: flex; 
+    margin-top: 1.5rem;
+  }
+  .social i {
+    font-size: 20px;
+    margin-right: 1rem;
+    color: var(--text-color);
+  }
+  .social i:hover {
+    color: var(--main-color);
+  }
+  .contact-box li a {
+    color: var(--text-color);
+  }
+  .contact-box li a:hover {
+    color: var(--main-color);
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+  .address i {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .address span {
+    margin-left: 1rem;
+  }
+.contact-box li a{
+    display: block;
+    margin-top: 1px;
+  }
